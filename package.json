@@ -65,11 +65,14 @@
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "watchify-watch": "watchify ./lib/main.js -o ./lib/bundle.js",
+    "start": "npm-run-all --parallel css-watch js-watch watchify-watch"
   },
   "version": "0.0.4",
   "dependencies": {
     "@chrisoakman/chessboardjs": "^1.0.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jsonfile": "^6.1.0",
+    "watchify": "^4.0.0"
   }
 }
