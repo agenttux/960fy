@@ -13,9 +13,29 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="board1" style="width: 75vmin;"></div>
-  </div>
+  <section class="hero is-small is-primary">
+    <div class="hero-body has-text-centered">
+      <p class="title">
+        960fy
+      </p>
+      <p class="subtitle">
+        Generate or Check Chess960 Positions
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column is-three-fifths">
+          <div id="board1"></div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+
   <script src="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
   <script type="text/javascript" src="lib/bundle.js"></script>
 </body>
