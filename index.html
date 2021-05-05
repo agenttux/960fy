@@ -33,15 +33,28 @@
 
             <div class="field has-addons">
               <div class="control">
-                <a class="button is-static">
+                <a class="button is-static is-large">
+                  Position Number
+                </a>
+              </div>
+              <div class="control is-expanded">
+                <input id="posNumInput" class="input is-large has-text-centered" type="number" min="0" max="959">
+              </div>
+            </div>
+
+            <br>
+
+            <div class="field has-addons">
+              <div class="control">
+                <a class="button is-small is-static">
                   FEN
                 </a>
               </div>
-              <div class="control">
-                <input id="fenText" class="input" type="text" readonly value="fen">
+              <div class="control is-expanded">
+                <input id="fenText" class="input is-small" type="text" readonly>
               </div>
               <div class="control">
-                <a class="button is-info copyButton" data-clipboard-target="#fenText">
+                <a class="button is-info copyButton is-small" data-clipboard-target="#fenText">
                   Copy
                 </a>
               </div>
