@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
     integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,30 @@
       <div class="container is-fluid">
         <div class="columns">
 
-          <div class="column"> <button id="genRandomButton" class="button is-info">Generate Random Position</button>
+          <div class="column">
+
+            <div class="field has-addons">
+              <div class="control">
+                <a class="button is-static">
+                  FEN
+                </a>
+              </div>
+              <div class="control">
+                <input id="fenText" class="input" type="text" readonly value="fen">
+              </div>
+              <div class="control">
+                <a class="button is-info copyButton" data-clipboard-target="#fenText">
+                  Copy
+                </a>
+              </div>
+            </div>
+
+
+            <br>
+
+            <div><button id="genRandomButton" class="button is-info">Generate Random Position</button></div>
+
+
           </div>
 
           <div class="column is-half">
@@ -43,7 +67,6 @@
 
   </section>
 
-  <script src="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
   <script type="text/javascript" src="lib/bundle.js"></script>
 </body>
 

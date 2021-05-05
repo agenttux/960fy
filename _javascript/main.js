@@ -1,6 +1,8 @@
+var chess = require('../node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js')
 var board1 = Chessboard('board1');
 var data = require('./960.json');
-
+var clipboard = require('clipboard');
+var fenText = document.getElementById("fenText");
 
 // generate random 960 position
 var rn = require('random-number');
@@ -15,6 +17,7 @@ function setRandomPos(){
   var num = gen();
   var fenString = data[num].Chess960FEN;
   board1.position(fenString);
+  fenText.value=fenString;
 }
 
 // initially set board to random 960 position
@@ -24,3 +27,5 @@ setRandomPos();
 $('#genRandomButton').on('click', function () {
   setRandomPos();
 })
+
+new clipboard('.copyButton');
