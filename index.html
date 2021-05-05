@@ -13,27 +13,34 @@
 </head>
 
 <body>
-  <section class="hero is-small is-primary">
-    <div class="hero-body has-text-centered">
+  <section class="hero is-dark is-fullheight">
+
+    <div class="hero-head has-text-centered">
       <p class="title">
         960fy
       </p>
       <p class="subtitle">
-        Generate or Check Chess960 Positions
+        Generate Chess960 Positions
       </p>
     </div>
-  </section>
 
-  <section>
-    <div class="container">
-      <div class="columns">
-        <div class="column"></div>
-        <div class="column is-three-fifths">
-          <div id="board1"></div>
+    <div class="hero-body has-text-centered">
+      <div class="container is-fluid">
+        <div class="columns">
+
+          <div class="column"> <button id="genRandomButton" class="button is-info">Generate Random Position</button>
+          </div>
+
+          <div class="column is-half">
+            <div id="board1"></div>
+          </div>
+
+          <div class="column"></div>
+
         </div>
-        <div class="column"></div>
       </div>
     </div>
+
   </section>
 
   <script src="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
