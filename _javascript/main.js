@@ -5,6 +5,8 @@ var clipboard = require('clipboard');
 var fenText = document.getElementById("fenText");
 var posNumInput = document.getElementById("posNumInput");
 
+var fenString;
+
 // generate random 960 position
 var rn = require('random-number');
 var gen = rn.generator({
@@ -16,7 +18,7 @@ var gen = rn.generator({
 // function to set the board to a random 960 position
 function setRandomPos(){
   var num = gen();
-  var fenString = data[num].Chess960FEN;
+  fenString = data[num].Chess960FEN;
   board1.position(fenString);
   fenText.value=fenString;
   posNumInput.value=num;
@@ -30,8 +32,12 @@ $('#genRandomButton').on('click', function () {
   setRandomPos();
 });
 
+$('#analyzeButton').on('click', function () {
+  window.open(`https://lichess.org/analysis/chess960/${fenString}`);
+});
+
 posNumInput.addEventListener('change', function(){
-  var fenString = data[posNumInput.value].Chess960FEN;
+  fenString = data[posNumInput.value].Chess960FEN;
   board1.position(fenString);
   fenText.value=fenString;
 
