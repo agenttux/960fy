@@ -26,4 +26,17 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 
+$primary: #282a36;
+$light: #e5d0cc;
+$white: $light;
+$cyan: #598392;
+$button-static-background-color: $cyan;
+$button-static-border-color: $cyan;
+$button-static-color: $light;
+$input-border-color: $cyan;
+$input-hover-border-color: $light;
+$input-focus-border-color: $cyan;
+$input-focus-color: $cyan;
+$input-color: $primary;
+
 @import "../node_modules/bulma/bulma";

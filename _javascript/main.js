@@ -37,9 +37,18 @@ $('#analyzeButton').on('click', function () {
 });
 
 posNumInput.addEventListener('change', function(){
+  try{
   fenString = data[posNumInput.value].Chess960FEN;
+  } catch (e) {
+    $('#illegalPos').show();
+    return;
+  }
   board1.position(fenString);
   fenText.value=fenString;
+  if ($('#illegalPos').is(":visible"))
+  {
+    $('#illegalPos').hide();
+  }
 
 });
 

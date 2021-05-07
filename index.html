@@ -7,20 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>960fy</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
-    integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/chessboard-1.0.0.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <section class="hero is-dark is-fullheight is-fullwidth">
+  <section class="hero is-primary is-fullheight is-fullwidth">
 
     <div class="hero-head has-text-centered">
-      <p class="title">
+      <p class="title has-text-light"> <br>
         960fy
       </p>
-      <p class="subtitle">
+      <p class="subtitle has-text-light">
         Generate Chess960 Positions
       </p>
     </div>
@@ -31,6 +30,9 @@
 
           <div class="column">
 
+            <div id="illegalPos" class="notification is-info has-text-light" style="display:none;">
+              Position number must be between 0 and 959. <br>
+            </div>
             <div class="field has-addons">
               <div class="control">
                 <a class="button is-static">
@@ -54,7 +56,7 @@
                 <input id="fenText" class="input is-small has-text-centered" type="text" readonly>
               </div>
               <div class="control">
-                <a class="button is-info copyButton is-small" data-clipboard-target="#fenText">
+                <a class="button copyButton is-small is-info has-text-light" data-clipboard-target="#fenText">
                   Copy
                 </a>
               </div>
@@ -63,7 +65,8 @@
 
             <br>
 
-            <div><button id="genRandomButton" class="button is-info">Generate Random Position</button></div>
+            <div><button id="genRandomButton" class="button is-info has-text-light">Generate Random Position</button>
+            </div>
 
 
           </div>
@@ -72,7 +75,8 @@
             <div id="board1"></div>
           </div>
 
-          <div class="column"> <button id="analyzeButton" class="button is-info">Analyze on lichess.org</button>
+          <div class="column"> <button id="analyzeButton" class="button is-info has-text-light">Analyze on
+              lichess.org</button>
           </div>
 
         </div>
