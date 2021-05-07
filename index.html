@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="img/chesspieces/wikipedia/wN.png">
   <link rel="stylesheet" href="css/chessboard-1.0.0.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -76,8 +79,25 @@
             <div id="board1"></div>
           </div>
 
-          <div class="column"> <button id="analyzeButton" class="button is-info has-text-light">Analyze on
-              lichess.org</button>
+          <div class="column">
+            <div class="field">
+              <button id="analyzeButton" class="button is-info has-text-light">
+                <span class="icon pl-1">
+                  <img src="img/lichess.svg"></i>
+                </span>
+                <span> &nbsp; Analyze on lichess.org </span>
+              </button>
+            </div> <br>
+
+            <div class="field">
+              <button id="gitButton" class="button is-info has-text-light">
+                <span class="icon pl-1">
+                  <img src="img/github-brands.svg"></i>
+                </span>
+                <span>&nbsp;Source Code</span></button>
+            </div>
+
+
           </div>
 
         </div>
