@@ -42,7 +42,7 @@
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif !important;
-  font-size: 14px;
+  font-size: 1vmax;
   position: absolute;
 }
 
@@ -54,4 +54,8 @@
 .numeric-fc462 {
   top: 2px;
   left: 2px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
