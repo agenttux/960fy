@@ -1,11 +1,11 @@
 [
   {
-    "SP": 1,
-    "Chess960FEN": "bqnbnrkr/pppppppp/8/8/8/8/PPPPPPPP/BQNBNRKR w KQkq - 0 1"
-  },
-  {
     "SP": 0,
     "Chess960FEN": "bbqnnrkr/pppppppp/8/8/8/8/PPPPPPPP/BBQNNRKR w KQkq - 0 1"
+  },
+  {
+    "SP": 1,
+    "Chess960FEN": "bqnbnrkr/pppppppp/8/8/8/8/PPPPPPPP/BQNBNRKR w KQkq - 0 1"
   },
   {
     "SP": 2,
